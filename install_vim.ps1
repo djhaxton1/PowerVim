@@ -32,9 +32,12 @@ Function Edit-Vimrc
 '
 
 $edits | Out-File $profile
+
+"`nCleaning up install files..."
+rm $file
+
 cd ~
-""
-"------------------------------------------------------------------------------"
+"`n------------------------------------------------------------------------------"
 "Vim has been successfully incorporated into PowerShell, to use the application"
 "restart PowerShell and type one of the following :"
 "vim"
